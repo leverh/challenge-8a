@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(229, 6%, 66%);
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 3.3rem 2rem;
+}
+
+header {
+    text-align: center;
+}
+
+.headline-soft {
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+}
+
+.headline-bold {
+    font: 600;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 1rem;
+}
+
+header p {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.7rem;
+    margin-top: 3.2rem;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem
+}
+
+.card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: right;
+    box-shadow: 0 10px 10px -6px rgb(203, 192, 192);
+}
+
+.card-text {
+   text-align: left;
+   padding-bottom: 5rem;
+}
+
+.card-text h2 {
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+}
+
+.supervisor {
+    border-top: 5px solid hsl(180, 62%, 55%);
+    align-self: center;
+}
+
+.team {
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.karma {
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+    border-top: 5px solid hsl(212, 86%, 64%);
+    align-self: center;
+}
+
+.attribution { 
+        font-size: 0.7rem; 
+        text-align: center; 
+        letter-spacing: 0.05rem;
+        font-weight: 500;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 375px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 2rem;
+    }
+
+    .card-text {
+        padding-bottom: 2rem;
+    }
+
+    .attribution {
+        padding: 1.7rem;
+    }
+}
